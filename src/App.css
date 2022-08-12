@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .App-logo {
@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+/* .slider{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+} */
+

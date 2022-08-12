@@ -1,0 +1,74 @@
+.container {
+    height: 70px;
+    background-color: darkblue;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.wrapper {
+    display: flex;
+    padding: 20px 30px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    height: 40px;
+    width: 60px;
+}
+
+.center {
+    display: flex;
+    height: 30px;
+    width: 300px;
+    background-color: #fff;
+    border: none;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.inputItem>input {
+    border: none;
+    background-color: none;
+}
+
+.inputItem>input:focus {
+    outline: none;
+}
+
+.iconSearch {
+    color: darkblue;
+}
+
+.right {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menuItem {
+    color: #ffb50f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuItem>span {
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.badge {
+    background-color: rgb(50, 130, 241);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+    margin-left: 30px;
+    top: 15px;
+    color: #fff;
+}
