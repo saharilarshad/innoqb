@@ -9,30 +9,37 @@
 
 .wrapper {
     display: flex;
-    padding: 20px 30px;
+    padding: 10px 70px;
     align-items: center;
     justify-content: space-around;
 }
 
 .logo {
     height: 40px;
-    width: 60px;
+    width: 80px;
+    object-fit: cover;
+    margin-right: -40px;
+}
+
+.mobile{
+    display: none;
 }
 
 .center {
     display: flex;
     height: 30px;
-    width: 300px;
+    width: 400px;
     background-color: #fff;
     border: none;
     border-radius: 15px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .inputItem>input {
     border: none;
     background-color: none;
+    margin: 0 10px;
 }
 
 .inputItem>input:focus {
@@ -41,6 +48,7 @@
 
 .iconSearch {
     color: darkblue;
+    margin-right: 7px;
 }
 
 .right {
@@ -56,8 +64,13 @@
     align-items: center;
 }
 
+.menuItem:hover {
+    font-size: 20px;
+}
+
 .menuItem>span {
     font-size: 12px;
+    color:#fff;
     cursor: pointer;
 }
 
@@ -71,4 +84,58 @@
     margin-left: 30px;
     top: 15px;
     color: #fff;
+}
+
+.menuItemM{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 750px) {
+
+    .container{
+        background-color: #fff;
+        border:1px solid gray;
+    }
+    .logo{
+        display: none;
+    }
+
+    .left > div > h3{
+        display: none;
+    }
+
+    .mobile{
+        display: flex;
+        color: black;
+        font-size: 30px;
+    }
+
+    /* .center{
+        width: 30px;
+    } */
+    .inputItem{
+        display: none;
+    }
+    .iconSearch{
+        margin-left: 10px;
+        font-size: 30px;
+        color: black;
+    }
+
+    .menuItem{
+        display: none;
+    }
+
+    .menuItemM{
+        display: flex;
+        color: black;
+        font-size: 30px;
+    }
+    .badge{
+        font-size: 15px;
+        margin-left: 15px;
+
+    }
 }

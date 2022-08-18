@@ -55,6 +55,20 @@
     height: 190px;
     width: 170px;
 }
+.imgCon:hover{
+    cursor: pointer;
+    /* color:transparent;
+    background-color:transparent */
+}
+
+/* .imgInfoBtn:hover{
+    border:none;
+    padding: 5px;
+    border-radius:7px;
+    background-color:silver;
+    z-index: 2;
+    cursor: pointer;
+} */
 
 .infoCon{
     padding:15px 40px;;

@@ -69,6 +69,9 @@ function Slider() {
                 <>
                   <div className="imgCon">
                     <img src={item.images[0]} alt={item.title} />
+
+                    {/* <h4 className="imgInfo">Quick View</h4> */}
+                    {/* <button className="imgInfoBtn">Quick View</button> */}
                   </div>
                   <div className="infoCon">
                     <div className="star">

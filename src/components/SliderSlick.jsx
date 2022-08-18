@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 // import { IoIosArrowDropleft as ArrowLeft } from "react-icons/io";
 // import { IoIosArrowDropright as ArrowRight } from "react-icons/io";
-import { AiFillStar as Star } from "react-icons/ai";
+// import { AiFillStar as Star } from "react-icons/ai";
 import axios from "axios";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -27,7 +27,7 @@ function SliderSlick() {
     getData();
   }, []);
 
-  const starArray = [...Array(5).keys()].map((i) => i + 1);
+  // const starArray = [...Array(5).keys()].map((i) => i + 1);
 
   // const Rating = ({ rating }) =>
   //   starArray.map((i) => (
@@ -89,7 +89,12 @@ function SliderSlick() {
               >
                 Sale
               </h4>
-              <img src={item.images[0]} alt={item.title} />
+              <div>
+                <img src={item.images[0]} alt={item.title} />
+                <div className="imgInfo">
+                  <button className="imgInfoBtn">Quick View</button>
+                </div>
+              </div>
               <div className="card-bottom">
                 {/* <Rating rating={item.rating} /> */}
                 <Stack spacing={1}>
